@@ -4,11 +4,9 @@ import com.github.strongbad.hermitage.annotation.EverythingIsNonnullByDefault;
 import org.springframework.core.style.ToStringCreator;
 import org.springframework.jdbc.core.RowMapper;
 
-import javax.annotation.concurrent.Immutable;
 import java.sql.*;
 import java.util.Objects;
 
-@Immutable
 @EverythingIsNonnullByDefault
 public class TestRow {
 

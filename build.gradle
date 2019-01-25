@@ -1,11 +1,9 @@
 buildscript {
     ext {
-        springBootVersion = '2.0.0.M2'
+        springBootVersion = '1.5.19.RELEASE'
     }
     repositories {
         mavenCentral()
-        maven { url "https://repo.spring.io/snapshot" }
-        maven { url "https://repo.spring.io/milestone" }
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -21,11 +19,14 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    maven { url "https://repo.spring.io/snapshot" }
-    maven { url "https://repo.spring.io/milestone" }
 }
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework:spring-tx')
+    compile('org.springframework:spring-jdbc')
+    compile('org.postgresql:postgresql:version:42.2.5')
+    compile('com.google.guava:guava:27.0.1-jre')
+    compile('com.google.code.findbugs:jsr305:3.0.2')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }

@@ -8,12 +8,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.annotation.Isolation;
 
-import javax.annotation.concurrent.Immutable;
-
 import static java.util.Objects.requireNonNull;
 
 @Component
-@Immutable
 @EverythingIsNonnullByDefault
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public final class HermitageTransactionDefinition implements TransactionDefinition {

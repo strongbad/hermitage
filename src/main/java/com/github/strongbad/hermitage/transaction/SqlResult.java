@@ -3,12 +3,10 @@ package com.github.strongbad.hermitage.transaction;
 import com.github.strongbad.hermitage.annotation.EverythingIsNonnullByDefault;
 import com.github.strongbad.hermitage.model.TestRow;
 
-import javax.annotation.concurrent.Immutable;
 import java.util.*;
 
 import static java.util.Objects.requireNonNull;
 
-@Immutable
 @EverythingIsNonnullByDefault
 public abstract class SqlResult {
 

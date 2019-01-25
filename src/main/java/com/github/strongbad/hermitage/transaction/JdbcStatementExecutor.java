@@ -7,12 +7,9 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.*;
 
-import javax.annotation.concurrent.Immutable;
-
 import static java.util.Objects.requireNonNull;
 
 @Component
-@Immutable
 @EverythingIsNonnullByDefault
 class JdbcStatementExecutor {
 

@@ -1,16 +1,15 @@
 package com.github.strongbad.hermitage.transaction;
 
 import com.github.strongbad.hermitage.annotation.EverythingIsNonnullByDefault;
-import org.springframework.transaction.*;
+import org.springframework.transaction.TransactionDefinition;
+import org.springframework.transaction.TransactionStatus;
 
-import javax.annotation.concurrent.Immutable;
 import java.util.Optional;
 import java.util.concurrent.Future;
 
 import static com.github.strongbad.hermitage.transaction.StepResult.futureResult;
 import static java.util.Objects.requireNonNull;
 
-@Immutable
 @EverythingIsNonnullByDefault
 public class Transaction {
 

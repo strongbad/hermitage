@@ -1,13 +1,11 @@
 package com.github.strongbad.hermitage.transaction;
 
 import javax.annotation.ParametersAreNonnullByDefault;
-import javax.annotation.concurrent.Immutable;
 import java.util.concurrent.*;
 
 import static com.github.strongbad.hermitage.util.InterruptibleSupplier.interruptible;
 import static java.util.Objects.requireNonNull;
 
-@Immutable
 @ParametersAreNonnullByDefault
 public class StepResult<T> {
 

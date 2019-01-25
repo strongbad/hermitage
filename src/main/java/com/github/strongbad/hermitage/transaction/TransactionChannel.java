@@ -5,12 +5,10 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.concurrent.Immutable;
 import java.util.concurrent.*;
 
 import static com.github.strongbad.hermitage.util.InterruptibleSupplier.interruptible;
 
-@Immutable
 @EverythingIsNonnullByDefault
 @Component
 @Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE)

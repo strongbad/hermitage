@@ -2,9 +2,7 @@ package com.github.strongbad.hermitage.transaction;
 
 import com.github.strongbad.hermitage.annotation.EverythingIsNonnullByDefault;
 
-import javax.annotation.concurrent.Immutable;
 
-@Immutable
 @EverythingIsNonnullByDefault
 public class SqlStatement {
 
